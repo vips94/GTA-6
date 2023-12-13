@@ -1,0 +1,143 @@
+.section{
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    z-index: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .top{
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 46%, rgba(255,255,255,0) 100%);
+        top: 0;
+        left: 0;
+        z-index: 1;
+        // backdrop-filter: blur(2px);
+    }
+
+    .videoHolder{
+        position: relative;
+        width: 105vh;
+        height: 60vh;
+        background-color: transparent;
+        margin: auto;
+        z-index: 2;
+        margin-top: 5rem;
+        border: 5px solid black;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .videoSec{
+            width: 100%;
+            height: 100%;
+            background-color: black;
+        }
+
+        .title{
+            position: absolute;
+            top: -4px;
+            left: -55px;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            font-size: 2rem;
+            letter-spacing: 1em;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            padding-left: 10px;
+        }
+
+        .loadingScreen{
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+
+    .listHolder{
+        position: relative;
+        width: 105vh;
+        height: 20vh;
+        background-color: black;
+        border: 5px solid black;
+        margin: auto;
+        z-index: 2;
+        margin-top: 1rem;
+        overflow: auto;
+        overflow-y: hidden;
+        &::-webkit-scrollbar{
+            display: none;
+
+        }
+        
+        ul{
+            height: calc(100%);
+            display: flex;
+            scroll-behavior: smooth;
+            gap: 5px;
+            
+    
+            li{
+                position: relative;
+                width: 25vh;
+                height: 100%;
+                background-color: white;
+                flex: 0 0 25vh;
+                cursor: pointer;
+
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .showPlayButton{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(0, 0, 0, 0.312);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img{
+                        width: 30%;
+                        height: 30%;
+                    }
+                }
+            }
+        }
+
+        
+    }
+}
+
+@keyframes rotate {
+    0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100%{
+    transform: translate(-50%, -50%) rotate(359deg);
+    }
+}
