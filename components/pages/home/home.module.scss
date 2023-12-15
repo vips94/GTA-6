@@ -4,7 +4,7 @@
     max-height: 100vh;
     position: relative;
     overflow: hidden;
-    background-image: url('/images/abstractBg.jpeg');
+    background-image: url('/images/media/wallpaper1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,7 +59,7 @@
 
     .character{
         position: absolute;
-        top: 60%;
+        top: 62%;
         left: 50%;
         transform: translate(-50%,-50%);
         width: 90vh;
@@ -67,6 +67,7 @@
         background-color: transparent;
         border-radius: 50%;
         transform-origin: center;
+        object-fit: contain;
     }
 
     .videoContainer{

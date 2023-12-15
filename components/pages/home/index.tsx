@@ -12,7 +12,7 @@ const HomePage = () => {
             <div className={styles.release}>
                 Coming 2025
             </div>
-            <img className={styles.character} src='./images/mainCharacter-rem.png'/>
+            <img className={styles.character} src='./images/characters/character1.png'/>
             <div className={styles.videoContainer}>
                 <p>
                     LATEST TRAILER
