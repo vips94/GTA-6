@@ -5,6 +5,7 @@ import HomePage from '@/components/pages/home';
 import Media from '@/components/pages/mediaV2';
 import Characters from '@/components/pages/characters';
 import About from '@/components/pages/about';
+import Footer from '@/components/footer';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <Media/>
         <Characters/>
         <About/>
+        <Footer/>
       </main>
     </>
   )

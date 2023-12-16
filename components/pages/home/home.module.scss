@@ -48,6 +48,7 @@
         position:absolute;
         bottom: 0;
         left: 0;
+        z-index: 5;
         text-align: start;
         font-size: 1.4rem;
         letter-spacing: 0.35em;
@@ -60,7 +61,7 @@
     .character{
         position: absolute;
         top: 62%;
-        left: 50%;
+        left: 52%;
         transform: translate(-50%,-50%);
         width: 90vh;
         height: 90vh;
@@ -72,8 +73,9 @@
 
     .videoContainer{
         position:absolute;
-        right: 0;
-        bottom: 0;
+        right: 5px;
+        bottom: 5px;
+        z-index: 5;
 
         p{
             text-align: end;

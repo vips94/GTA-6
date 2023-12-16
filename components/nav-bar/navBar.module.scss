@@ -13,7 +13,7 @@ $traiangelWidth: 60px;
     justify-content: center;
     color: rgb(38, 36, 37);
     z-index: 9999;
-    clip-path: polygon(9% 100%, 91% 100%, 100% 0, 0 0);
+    clip-path: polygon(10% 100%, 90% 100%, 100% 0, 0 0);
 
     .container{
         width: calc(100% - 2*$traiangelWidth);
@@ -42,10 +42,11 @@ $traiangelWidth: 60px;
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-top: 0.4rem;
 
             .logo{
-                width: 3rem;
-                height: 3rem;
+                width: 5rem;
+                height: 5rem;
     
             }
         }
