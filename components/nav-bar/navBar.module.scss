@@ -13,28 +13,7 @@ $traiangelWidth: 60px;
     justify-content: center;
     color: rgb(38, 36, 37);
     z-index: 9999;
-
-    &::before{
-        content: '';
-        background-color: black;
-        width: $traiangelWidth;
-        height: 100%;
-        position: absolute;
-        left: -1px;
-        top: 0;
-        clip-path: polygon(0 0, 0% 100%, 100% 100%);
-    }
-
-    &::after{
-        content: '';
-        background-color: black;
-        width: $traiangelWidth;
-        height: 100%;
-        position: absolute;
-        right: -1px;
-        top: 0;
-        clip-path: polygon(100% 0, 0% 100%, 100% 100%);
-    }
+    clip-path: polygon(9% 100%, 91% 100%, 100% 0, 0 0);
 
     .container{
         width: calc(100% - 2*$traiangelWidth);

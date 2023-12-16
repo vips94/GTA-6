@@ -10,21 +10,42 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    .top{
+    // .top{
+    //     position: absolute;
+    //     width: 100%;
+    //     height: 100vh;
+    //     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 46%, rgba(255,255,255,0) 100%);
+    //     top: 0;
+    //     left: 0;
+    //     z-index: 1;
+    //     // backdrop-filter: blur(2px);
+    // }
+
+    .topHeader,.topFooter{
         position: absolute;
         width: 100%;
-        height: 100vh;
-        background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 46%, rgba(255,255,255,0) 100%);
+        height: 20vh;
+        background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 16%, rgba(255,255,255,0) 70%);
         top: 0;
         left: 0;
-        z-index: 1;
-        // backdrop-filter: blur(2px);
+        z-index:5;
+    }
+
+    .topFooter{
+        top: auto;
+        bottom: 0;
+        height: 10vh;
+        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%, rgb(0, 0, 0) 100%);
+
     }
 
     .videoHolder{
-        position: relative;
-        width: 105vh;
+        position: absolute;
+        width: 90vh;
         height: 60vh;
+        bottom: 50%;
+        right: 5%;
+        transform:  translate(0,50%) skew(-0deg);
         background-color: transparent;
         margin: auto;
         z-index: 2;
@@ -43,19 +64,7 @@
             background-color: black;
         }
 
-        .title{
-            position: absolute;
-            top: -4px;
-            left: -55px;
-            writing-mode: vertical-lr;
-            text-orientation: upright;
-            font-size: 2rem;
-            letter-spacing: 1em;
-            font-weight: bold;
-            color: white;
-            text-transform: uppercase;
-            padding-left: 10px;
-        }
+       
 
         .loadingScreen{
             background-color: black;
@@ -73,34 +82,55 @@
 
 
     .listHolder{
-        position: relative;
-        width: 105vh;
-        height: 20vh;
-        background-color: black;
-        border: 5px solid black;
-        margin: auto;
-        z-index: 2;
-        margin-top: 1rem;
-        overflow: auto;
-        overflow-y: hidden;
-        &::-webkit-scrollbar{
-            display: none;
+        width: 24vw;
+        height: 100%;
+        position: absolute;
+        left: 15%;
+        top: 0;
+        z-index: 4;
+        transform: skew(-10deg);
+        backdrop-filter: blur(5px);
+        background-color: rgba(0, 0, 0, 0.507);
+        padding: 2rem 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        flex-direction: column;
 
+        .title{
+            position: absolute;
+            top: 50%;
+            left: -55px;
+            transform: translate(0,-50%);
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            font-size: 2rem;
+            letter-spacing: 1em;
+            font-weight: bold;
+            color: white;
+            text-transform: uppercase;
+            padding-left: 10px;
         }
+
         
         ul{
             height: calc(100%);
             display: flex;
+            flex-direction: column;
             scroll-behavior: smooth;
-            gap: 5px;
-            
+            list-style: none;
+            overflow: scroll;
+
+            &::-webkit-scrollbar{
+                display: none;
+            }
     
             li{
                 position: relative;
-                width: 25vh;
+                width: 100%;
                 height: 100%;
                 background-color: white;
-                flex: 0 0 25vh;
+                // flex: 0 0 25vh;
                 cursor: pointer;
 
                 img{
@@ -130,24 +160,6 @@
         }
 
         
-    }
-
-    .topHeader,.topFooter{
-        position: absolute;
-        width: 100%;
-        height: 20vh;
-        background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0,0,0,1) 26%, rgba(255,255,255,0) 70%);
-        top: 0;
-        left: 0;
-        z-index:5;
-    }
-
-    .topFooter{
-        top: auto;
-        bottom: 0;
-        height: 10vh;
-        background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%, rgb(0, 0, 0) 100%);
-
     }
 }
 

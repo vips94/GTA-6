@@ -5,6 +5,7 @@ const HomePage = () => {
     return (
         <div className={styles.section}>
             <div className={styles.top}/>
+            <div className={styles.topFooter} />
             <img className={styles.circle} src='./svg/circle.svg'/>
             <div className={styles.logo}>
                 <img src={'/images/gta6logo.png'}/>

@@ -27,7 +27,6 @@ const Media = () => {
     >
       <div className={styles.top} />
       <div className={styles.videoHolder}>
-        <div className={styles.title}>MEDIA</div>
         {isIframeMounted && <div className={styles.loadingScreen}>
           <Spinner />
         </div>}
@@ -50,6 +49,8 @@ const Media = () => {
         )}
       </div>
       <div className={styles.listHolder}>
+      <div className={styles.title}>MEDIA</div>
+
         <ul>
           {MediaList?.map((item, index) => {
             return (
@@ -70,8 +71,8 @@ const Media = () => {
           })}
         </ul>
       </div>
-
-      
+      <div className={styles.topHeader} />
+      <div className={styles.topFooter} />
     </div>
   );
 };

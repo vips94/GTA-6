@@ -2,7 +2,7 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
 import NavBar from '@/components/nav-bar';
 import HomePage from '@/components/pages/home';
-import Media from '@/components/pages/media';
+import Media from '@/components/pages/mediaV2';
 import Characters from '@/components/pages/characters';
 import About from '@/components/pages/about';
 
