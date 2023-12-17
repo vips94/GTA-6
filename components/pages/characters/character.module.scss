@@ -64,18 +64,21 @@
             width: 50%;
             max-width: 50%;
             height: 100%;
-            background-color: rgba(235, 80, 212, 0.5);
+            background-color: rgba(235, 80, 212, 0.1);
             display: flex;
             justify-content: center;
             align-items: center;
-            backdrop-filter: blur(2px);
+            //border: 1px solid rgba(235, 80, 212, 0.5);
+            backdrop-filter: blur(4px);
 
             &:nth-child(2){
-                background-color: rgba(19, 94, 210, 0.5);
+                background-color: rgba(19, 94, 210, 0.1);
+                //border: 1px solid rgba(19, 94, 210, 0.5);
             }
 
             &:nth-child(3){
-                background-color: rgba(249, 198, 87, 0.5);
+                background-color: rgba(249, 198, 87, 0.1);
+                //border: 1px solid rgba(249, 198, 87, 0.5);
             }
 
             .chInfo{
