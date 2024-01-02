@@ -21,8 +21,6 @@
         // backdrop-filter: blur(2px);
     }
 
-    
-
     .container{
         position: absolute;
         left: 15%;
@@ -131,5 +129,33 @@
         height: 10vh;
         background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,1) 96%, rgb(0, 0, 0) 100%);
 
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .section{
+        .container{
+            ul{
+                overflow: auto;
+                overflow-y: hidden;
+            }
+            li{
+                max-width: 400px;
+                min-width: 400px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 556px) {
+    .section{
+        .container{
+            ul{
+                max-width: 400px;
+                min-width: 400px;
+                overflow: scroll;
+                overflow-y: hidden;
+            }
+        }
     }
 }

@@ -1,6 +1,7 @@
 $traiangelWidth: 60px;
 .navSection{
     width: 70%;
+    min-width: 800px;
     max-width: 800px;
     height: 3rem;
     background-color: white;
@@ -31,7 +32,7 @@ $traiangelWidth: 60px;
             justify-content: space-between;
             gap: 4rem;
 
-            div{
+            a{
                 font-size: 1.3rem;
                 font-weight: bold;
                 font-family: 'Poppins';
@@ -52,5 +53,91 @@ $traiangelWidth: 60px;
         }
 
         
+    }
+}
+
+.breadcrumb{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 2.2rem;
+    right: 2.2rem;
+    z-index: 9999;
+    cursor: pointer;
+
+    path{
+      stroke: white;
+    }
+  }
+
+  .mobile-nav-loader {
+    position: fixed;
+    top: 30%;
+    transform: translate(0,-50%);
+    right: -30px;
+    background-color: transparent;
+    height: 50%;
+    z-index: 9998;
+    pointer-events: none;
+  }
+  
+  .mobile-nav-section {
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    pointer-events: none;
+  
+    .download{
+      position: absolute;
+      bottom: -2rem;
+      left: 50%;
+      transform: translate(-50%,0);
+      width: 30vw;
+      height: 40px;
+    }
+  
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      pointer-events: none;
+    }
+  
+    .right {
+      display: inherit;
+      flex-direction: column;
+      gap: 2rem;
+      pointer-events: none;
+  
+      .Mlink {
+        background-color: white;
+        min-width: 250px;
+        padding: 1rem 3rem;
+        position: relative;
+        font-size: 1.4rem;
+        white-space: nowrap;
+        text-transform: uppercase;
+        height: 100%;
+        pointer-events: all;
+        color: black;
+        font-size: 1.3rem;
+        font-weight: bold;
+        font-family: 'Poppins';
+        border-radius: 12px;
+      }
+  
+      .active {
+        color: red;
+      }
+    }
+  }
+
+@media screen and (max-width: 1080px) {
+    .navSection{
+        display: none;
     }
 }

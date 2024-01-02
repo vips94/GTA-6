@@ -24,6 +24,7 @@ const Media = () => {
     <div
       className={styles.section}
       style={{ backgroundImage: `url(${selectedMedia?.src})` }}
+      id="media"
     >
       <div className={styles.top} />
       <div className={styles.videoHolder}>

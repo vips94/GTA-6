@@ -23,6 +23,8 @@
     .textHolder {
         width: 30vw;
         height: 100%;
+        max-width: 500px;
+        min-width: 400px;
         position: absolute;
         right: 8.5%;
         top: 0;
@@ -159,6 +161,26 @@
                 margin: auto;
             }
             // height: 100px;
+        }
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .textHolder {
+        width: 100%;
+        max-width: 400px;
+        min-width: 400px;
+        right: 15.5%;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .section{
+        .textHolder {
+            width: 100%;
+            max-width: 400px;
+            min-width: 400px;
+            right: 15.5%;
         }
     }
 }

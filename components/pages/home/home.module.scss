@@ -120,3 +120,58 @@
     transform: translate(-50%, -50%) rotate(359deg);
     }
 }
+
+@media screen and (max-width: 1080px) {
+    .section{
+        .logo{
+            width: 20vh;
+            height: 20vh;
+        }
+    
+        .release{
+            top: 50%;
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+            transform: translate(0,-50%);
+        }
+    
+        .character{
+            position: absolute;
+            top: 62%;
+            left: 55%;
+        }
+    
+        .videoContainer{
+            bottom: 60px;
+        }
+    }
+}
+
+@media screen and (max-width: 546px) {
+    .section{
+        .logo{
+            width: 15vh;
+            height: 15vh;
+        }
+    
+        .character{
+            left: 58%;
+        }
+    
+        .videoContainer{
+            bottom: 60px;
+
+            p{
+                font-size: 1rem;
+                letter-spacing: 0.45em;
+            }
+            .videoSec{
+
+                width: 250px;
+                height: 150px;
+                border-radius: 12px;
+                border: 2px solid white;
+            }
+        }
+    }
+}

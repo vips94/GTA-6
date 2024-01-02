@@ -8,6 +8,7 @@ const About = () => {
     <div
       className={styles.section}
       style={{ backgroundImage: `url(${MediaList[5]?.src})` }}
+      id="about"
     >
       <div className={styles.top} />
       <div className={styles.textHolder}>

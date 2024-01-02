@@ -42,6 +42,7 @@
     .videoHolder{
         position: absolute;
         width: 90vh;
+        min-width: 600px;
         height: 60vh;
         bottom: 50%;
         right: 5%;
@@ -83,6 +84,8 @@
 
     .listHolder{
         width: 24vw;
+        max-width: 330px;
+        min-width: 330px;
         height: 100%;
         position: absolute;
         left: 15%;
@@ -169,5 +172,36 @@
     }
     100%{
     transform: translate(-50%, -50%) rotate(359deg);
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .section{
+        .videoHolder{
+            width: 60%;
+            right: 1%;
+        }
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .section{
+        .videoHolder{
+            display: none;
+        }
+
+        .listHolder{
+            max-width: 400px;
+            min-width: 400px;
+            ul{
+                li{
+                    .showPlayButton{
+                        display: none;
+                    }
+                }
+            }
+    
+            
+        }
     }
 }

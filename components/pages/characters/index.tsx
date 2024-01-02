@@ -10,6 +10,7 @@ const Characters = () => {
     <div
       className={styles.section}
       style={{ backgroundImage: `url(${selectedMedia?.src})` }}
+      id="character"
     >
       <div className={styles.top} />
       <div className={styles.container}>
