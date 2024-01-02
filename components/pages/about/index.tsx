@@ -5,7 +5,7 @@ import DownloadButton from "@/components/download-button";
 
 const About = () => {
   return (
-    <div
+    <section
       className={styles.section}
       style={{ backgroundImage: `url(${MediaList[5]?.src})` }}
       id="about"
@@ -40,7 +40,7 @@ const About = () => {
         </p>
         <DownloadButton className={styles.buyNow}/>
       </div>
-    </div>
+    </section>
   );
 };
 

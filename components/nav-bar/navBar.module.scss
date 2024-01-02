@@ -36,8 +36,21 @@ $traiangelWidth: 60px;
                 font-size: 1.3rem;
                 font-weight: bold;
                 font-family: 'Poppins';
+
+                &:hover{
+                  color: rgba(235, 80, 212, 1);
+                }
             }
+
+            // &:has(a:hover) a:not(:hover){
+            //   opacity: 0.5;
+            // }
         }
+
+        .active{
+          color: rgba(235, 80, 212, 1);
+        }
+
 
         .center{
             display: flex;

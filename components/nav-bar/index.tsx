@@ -22,6 +22,47 @@ const NavBar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+    const navLinks = document.querySelectorAll(`.${styles.Mlink}`);
+    const frame = window;
+
+    let currentSection = "home";
+    if (!frame) return;
+    sections.forEach((section, i) => {
+      console.log(frame.scrollY)
+      if (frame.scrollY >= section.offsetTop) {
+        currentSection = section.id;
+      }
+    });
+    navLinks.forEach((link, i) => {
+      if (link.getAttribute("href")?.includes(currentSection)) {
+        const oldClassName = link?.classList.item(1);
+        if (oldClassName) link?.classList.remove(oldClassName);
+        link.classList.add(`${styles[`active`]}`);
+      }
+    });
+
+    window?.addEventListener("scroll", () => {
+      sections.forEach((section, i) => {
+        console.log(frame.scrollY)
+        if (frame.scrollY >= section.offsetTop) {
+          currentSection = section.id;
+        }
+      });
+
+      navLinks.forEach((link, i) => {
+        if (link.getAttribute("href")?.includes(currentSection)) {
+          const oldClassName = link?.classList.item(1);
+          if (oldClassName) link?.classList.remove(oldClassName);
+          link.classList.add(`${styles[`active`]}`);
+        } else {
+          link.classList.remove(`${styles[`active`]}`);
+        }
+      });
+    });
+  }, []);
+
   const resizeProjectList = (e: any) => {
     if (mobile.matches) {
       setIsMobile(true);

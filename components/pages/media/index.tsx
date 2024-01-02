@@ -21,7 +21,7 @@ const Media = () => {
   };
 
   return (
-    <div
+    <section
       className={styles.section}
       style={{ backgroundImage: `url(${selectedMedia?.src})` }}
     >
@@ -72,7 +72,7 @@ const Media = () => {
       </div>
 
       
-    </div>
+    </section>
   );
 };
 

@@ -3,7 +3,7 @@ import styles from './home.module.scss';
 
 const HomePage = () => {
     return (
-        <div className={styles.section} id="home">
+        <section className={styles.section} id="home">
             <div className={styles.top}/>
             <div className={styles.topFooter} />
             <img className={styles.circle} src='./svg/circle.svg'/>
@@ -27,7 +27,7 @@ const HomePage = () => {
                 </iframe>
             </div>
             
-        </div>
+        </section>
     );
 };
 

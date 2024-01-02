@@ -7,7 +7,7 @@ const Characters = () => {
   const [selectedMedia, setSelectedMedia] = useState(MediaList[0]);
 
   return (
-    <div
+    <section
       className={styles.section}
       style={{ backgroundImage: `url(${selectedMedia?.src})` }}
       id="character"
@@ -48,7 +48,7 @@ const Characters = () => {
       </div>
       <div className={styles.topHeader} />
       <div className={styles.topFooter} />
-    </div>
+    </section>
   );
 };
 
