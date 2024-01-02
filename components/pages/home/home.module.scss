@@ -19,11 +19,11 @@
     
     .circle{
         position: absolute;
-        top: 70%;
+        top: 80%;
         left: 50%;
         transform: translate(-50%,-50%);
-        width: 90vh;
-        height: 90vh;
+        width: 70vh;
+        height: 70vh;
         background-color: transparent;
         border-radius: 50%;
         animation: rotate 15s linear infinite;
@@ -32,10 +32,12 @@
 
     .logo{
         position:absolute;
-        top: 0;
-        left: 0;
+        top: 15px;
+        left: 15px;
         width: 25vh;
         height: 25vh;
+        max-width: 200px;
+        max-height: 150px;
 
         img{
             width :100%;
@@ -60,11 +62,11 @@
 
     .character{
         position: absolute;
-        top: 62%;
+        top: 70%;
         left: 52%;
         transform: translate(-50%,-50%);
-        width: 90vh;
-        height: 90vh;
+        width: 70vh;
+        height: 70vh;
         background-color: transparent;
         border-radius: 50%;
         transform-origin: center;
@@ -73,8 +75,8 @@
 
     .videoContainer{
         position:absolute;
-        right: 5px;
-        bottom: 5px;
+        right: 15px;
+        bottom: 15px;
         z-index: 5;
 
         p{
@@ -137,7 +139,7 @@
     
         .character{
             position: absolute;
-            top: 62%;
+            top: 70%;
             left: 55%;
         }
     
@@ -155,6 +157,7 @@
         }
     
         .character{
+            top: 70%;
             left: 58%;
         }
     

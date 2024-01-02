@@ -18,6 +18,7 @@
         top: 0;
         left: 0;
         z-index: 1;
+        pointer-events: none;
         // backdrop-filter: blur(2px);
     }
 
@@ -29,6 +30,8 @@
         top: 0;
         left: 0;
         z-index:5;
+        pointer-events: none;
+
     }
 
     .topFooter{
@@ -84,8 +87,8 @@
 
     .listHolder{
         width: 24vw;
-        max-width: 330px;
-        min-width: 330px;
+        max-width: 430px;
+        min-width: 430px;
         height: 100%;
         position: absolute;
         left: 15%;
@@ -172,6 +175,28 @@
     }
     100%{
     transform: translate(-50%, -50%) rotate(359deg);
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .section{
+        .videoHolder{
+            display: none;
+        }
+
+        .listHolder{
+            max-width: 330px;
+            min-width: 330px;
+            ul{
+                li{
+                    .showPlayButton{
+                        display: none;
+                    }
+                }
+            }
+    
+            
+        }
     }
 }
 
